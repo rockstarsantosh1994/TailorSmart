@@ -63,7 +63,7 @@ public interface AppService {
     Call<UserResponse> updateappointment(@FieldMap Map<String, String> params);
 
     @FormUrlEncoded
-    @POST("/theecca/users/createorder.php")
+    @POST(BuildConfig.API_PATH +"createorder.php")
     Call<UserData> createorder(@FieldMap Map<String, String> params);
 
     @FormUrlEncoded
@@ -75,22 +75,22 @@ public interface AppService {
     Call<UserResponse> contactus(@FieldMap Map<String, String> params);
 
     @FormUrlEncoded
-    @POST(BuildConfig.API_FOLDER + "admin/reorderproduct.php")
+    @POST(BuildConfig.API_FOLDER + "reorderproduct.php")
     Call<UserResponse> reorderproduct(@FieldMap Map<String, String> params);
 
     @FormUrlEncoded
-    @POST(BuildConfig.API_FOLDER + "users/mymeasurements.php")
+    @POST(BuildConfig.API_FOLDER + "mymeasurements.php")
     Call<MeasurementData> mymeasurements(@FieldMap Map<String, String> params);
 
-    @GET(BuildConfig.API_FOLDER + "users/getvacancy.php")
+    @GET(BuildConfig.API_FOLDER + "getvacancy.php")
     Call<VacancyData> getvacancy();
 
     @FormUrlEncoded
-    @POST(BuildConfig.API_FOLDER + "users/requestforalteration.php")
+    @POST(BuildConfig.API_FOLDER + "requestforalteration.php")
     Call<UserResponse> requestforalteration(@FieldMap Map<String, String> params);
 
     @FormUrlEncoded
-    @POST(BuildConfig.API_FOLDER + "users/deleteorderitem.php")
+    @POST(BuildConfig.API_FOLDER + "deleteorderitem.php")
     Call<UserResponse> deleteorderitem(@FieldMap Map<String, String> params);
 
     @FormUrlEncoded

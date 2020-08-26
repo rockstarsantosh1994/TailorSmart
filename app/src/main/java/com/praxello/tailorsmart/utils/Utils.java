@@ -63,7 +63,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Utils {
-    //    public static String tag = "MyFragment";
+    //public static String tag = "MyFragment";
     public static final String OTP_DELIMITER = ":";
     public static String NO_INTERNET_MSG = "You don't have internet connection.Please connect to internet";
     public static String NO_INTERNET_TITLE = "No Internet Connection";
