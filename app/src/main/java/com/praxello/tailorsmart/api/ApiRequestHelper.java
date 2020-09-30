@@ -29,10 +29,10 @@ import java.util.concurrent.TimeUnit;
 
 public class ApiRequestHelper {
 
-    public static interface OnRequestComplete {
-        public void onSuccess(Object object);
+    public interface OnRequestComplete {
+        void onSuccess(Object object);
 
-        public void onFailure(String apiResponse);
+        void onFailure(String apiResponse);
     }
 
     private static ApiRequestHelper instance;

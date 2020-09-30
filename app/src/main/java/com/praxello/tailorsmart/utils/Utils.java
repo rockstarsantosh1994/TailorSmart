@@ -46,6 +46,7 @@ import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.DateFormat;
@@ -266,12 +267,8 @@ public class Utils {
     public static String toBase64Encode(String string) {
         String base64 = "";
         byte[] data;
-        try {
-            data = string.getBytes("UTF-8");
-            base64 = Base64.encodeToString(data, Base64.DEFAULT);
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
+        data = string.getBytes(StandardCharsets.UTF_8);
+        base64 = Base64.encodeToString(data, Base64.DEFAULT);
         return base64;
     }
 
@@ -531,7 +528,7 @@ public class Utils {
         StringBuilder sb = new StringBuilder();
         String line;
         try {
-            br = new BufferedReader(new InputStreamReader(is, "iso-8859-1"), 8);
+            br = new BufferedReader(new InputStreamReader(is, StandardCharsets.ISO_8859_1), 8);
             while ((line = br.readLine()) != null) {
                 sb.append(line);
             }

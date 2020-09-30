@@ -34,15 +34,14 @@ public class MySSLSocketFactory extends SSLSocketFactory {
     }
 
     @Override
-    public Socket createSocket(String host, int port) throws IOException, UnknownHostException {
+    public Socket createSocket(String host, int port) throws IOException {
         SSLSocket socket = (SSLSocket) sslSocketFactory.createSocket(host, port);
         socket.setEnabledProtocols(new String[]{"TLSv1.2"});
         return socket;
     }
 
     @Override
-    public Socket createSocket(String host, int port, InetAddress localHost, int localPort) throws IOException,
-            UnknownHostException {
+    public Socket createSocket(String host, int port, InetAddress localHost, int localPort) throws IOException {
         SSLSocket socket = (SSLSocket) sslSocketFactory.createSocket(host, port, localHost, localPort);
         socket.setEnabledProtocols(new String[]{"TLSv1.2"});
         return socket;
