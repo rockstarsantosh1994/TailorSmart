@@ -22,7 +22,6 @@ import retrofit2.http.POST;
 import retrofit2.http.PartMap;
 import retrofit2.http.QueryMap;
 
-
 public interface AppService {
     @FormUrlEncoded
     @POST(BuildConfig.API_PATH + "regpushnotification.php")
