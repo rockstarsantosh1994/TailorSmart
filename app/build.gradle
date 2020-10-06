@@ -25,8 +25,8 @@ android {
         applicationId "com.praxello.tailorsmart"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 7
-        versionName "7.0.1"
+        versionCode 8
+        versionName "8.0.1"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
         buildConfigField 'String', 'BASE_URL', '"https://103.127.146.5/"'
@@ -39,14 +39,17 @@ android {
         buildConfigField 'String', 'RSA_KEY_URL', '"https://103.127.146.25/~tailors/paymentgateway/GetRSA.php"'
         buildConfigField 'String', 'BASE_URL', '"https://103.127.146.25/"'*/
 
-        buildConfigField 'String', 'BASE_URL', '"http://103.127.146.5/"'
-        buildConfigField 'String', 'API_FOLDER', '"/~tailor/tailorsmart/"'
-        buildConfigField 'String', 'API_PATH', '"/~tailor/tailorsmart/users/"'
+        buildConfigField 'String', 'BASE_URL', '"https://103.127.146.25/"'
+        buildConfigField 'String', 'API_FOLDER', '"~tailors/users/"'
+        buildConfigField 'String', 'API_PATH', '"~tailors/users/"'
         buildConfigField 'String', 'ACCESS_CODE', '"AVCF88GJ48BZ60FCZB"'
         buildConfigField 'String', 'MERCHANT_ID', '"230450"'
-        buildConfigField 'String', 'REDIRECT_URL', '"http://103.127.146.5/~tailor/tailorsmart/paymentgateway/ccavResponseHandler.php"'
+        buildConfigField 'String', 'REDIRECT_URL', '"https://103.127.146.25/~tailors/paymentgateway/ccavResponseHandler.php"'
+        buildConfigField 'String', 'CANCEL_URL', '"https://103.127.146.25/~tailors/paymentgateway/ccavResponseHandler.php"'
+        buildConfigField 'String', 'RSA_KEY_URL', '"https://103.127.146.25/~tailors/paymentgateway/GetRSA.php"'
+        /*buildConfigField 'String', 'REDIRECT_URL', '"http://103.127.146.5/~tailor/tailorsmart/paymentgateway/ccavResponseHandler.php"'
         buildConfigField 'String', 'CANCEL_URL', '"http://103.127.146.5/~tailor/tailorsmart/paymentgateway/ccavResponseHandler.php"'
-        buildConfigField 'String', 'RSA_KEY_URL', '"http://103.127.146.5/~tailor/tailorsmart/paymentgateway/GetRSA.php"'
+        buildConfigField 'String', 'RSA_KEY_URL', '"http://103.127.146.5/~tailor/tailorsmart/paymentgateway/GetRSA.php"'*/
     }
 
     buildTypes {
