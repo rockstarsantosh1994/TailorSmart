@@ -6,12 +6,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -30,8 +32,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
-
-
 
 public class CCAvenueWebViewActivity extends AppCompatActivity {
     Intent mainIntent;
@@ -59,6 +59,7 @@ public class CCAvenueWebViewActivity extends AppCompatActivity {
             LoadingDialog.showLoadingDialog(CCAvenueWebViewActivity.this, "Loading...");
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.KITKAT)
         @Override
         protected Void doInBackground(Void... arg0) {
             if (!ServiceUtility.chkNull(vResponse).equals("")

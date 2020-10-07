@@ -1,6 +1,9 @@
 package com.praxello.tailorsmart.utility;
 
+import android.os.Build;
 import android.util.Base64;
+
+import androidx.annotation.RequiresApi;
 
 import java.nio.charset.StandardCharsets;
 import java.security.KeyFactory;
@@ -10,6 +13,7 @@ import java.security.spec.X509EncodedKeySpec;
 import javax.crypto.Cipher;
 
 public class RSAUtility {
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public static String encrypt(String plainText, String key) {
         try {
             PublicKey publicKey = KeyFactory.getInstance("RSA").generatePublic(new X509EncodedKeySpec(Base64.decode(key, Base64.DEFAULT)));

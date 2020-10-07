@@ -3,6 +3,7 @@ package com.praxello.tailorsmart;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -25,6 +26,7 @@ import java.math.BigDecimal;
 import butterknife.BindView;
 
 public class PaymentsActivity extends BaseActivity {
+
     @BindView(R.id.toolbarTitle)
     TextView toolbarTitle;
     @BindView(R.id.toolbar)
@@ -89,6 +91,9 @@ public class PaymentsActivity extends BaseActivity {
         intent.putExtra(AvenuesParams.CANCEL_URL, BuildConfig.CANCEL_URL);
         intent.putExtra(AvenuesParams.RSA_KEY_URL, BuildConfig.RSA_KEY_URL);
         intent.putExtra(AvenuesParams.PROMO_CODE, "");
+
+        Log.e("PaymentsActivity", "startWebViewActivity: "+paymentToPass.getPaymentId() );
+
         if (app.getPreferences().getLoggedInUser().getData() != null) {
             Data data = app.getPreferences().getLoggedInUser().getData();
             intent.putExtra(AvenuesParams.BILLING_COUNTRY, "India");
