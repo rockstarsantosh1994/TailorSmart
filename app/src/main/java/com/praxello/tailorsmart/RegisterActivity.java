@@ -14,7 +14,6 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
@@ -23,8 +22,6 @@ import butterknife.BindView;
 import butterknife.OnClick;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.praxello.tailorsmart.api.ApiRequestHelper;
-import com.praxello.tailorsmart.model.Landmark;
-import com.praxello.tailorsmart.model.LandmarkData;
 import com.praxello.tailorsmart.model.UserData;
 import com.praxello.tailorsmart.utils.Utils;
 import com.praxello.tailorsmart.widget.materialprogress.CustomProgressDialog;
@@ -38,7 +35,7 @@ import java.util.*;
 import static io.nlopez.smartlocation.location.providers.LocationGooglePlayServicesProvider.REQUEST_CHECK_SETTINGS;
 
 public class RegisterActivity extends BaseActivity {
-    String[] cities = {"Pune", "Mumbai"};
+    String[] cities = {"Pune", "Mumbai","Nagpur","Kolkata"};
     @BindView(R.id.etConfPassword)
     MaterialEditText etConfPassword;
     @BindView(R.id.toolbarTitle)
