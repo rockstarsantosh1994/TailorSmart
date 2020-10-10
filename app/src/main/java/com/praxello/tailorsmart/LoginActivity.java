@@ -123,7 +123,6 @@ public class LoginActivity extends BaseActivity {
             }
             case R.id.tv_forgetPassword: {
                 startActivity(new Intent(mContext, ForgotPasswordActivity.class));
-
                 break;
             }
             case R.id.tv_signup: {
