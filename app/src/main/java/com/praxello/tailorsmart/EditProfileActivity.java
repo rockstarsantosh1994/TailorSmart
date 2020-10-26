@@ -39,7 +39,7 @@ import io.nlopez.smartlocation.location.providers.LocationGooglePlayServicesProv
 import static io.nlopez.smartlocation.location.providers.LocationGooglePlayServicesProvider.REQUEST_CHECK_SETTINGS;
 
 public class EditProfileActivity extends BaseActivity {
-    String[] cities = {"Pune", "Mumbai"};
+    String[] cities = {"Pune", "Mumbai","Nagpur","Kolkata","Bengaluru","Delhi"};
     @BindView(R.id.toolbarTitle)
     TextView toolbarTitle;
     @BindView(R.id.toolbar)

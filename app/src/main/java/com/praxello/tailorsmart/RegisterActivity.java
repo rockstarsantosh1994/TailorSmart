@@ -35,7 +35,7 @@ import java.util.*;
 import static io.nlopez.smartlocation.location.providers.LocationGooglePlayServicesProvider.REQUEST_CHECK_SETTINGS;
 
 public class RegisterActivity extends BaseActivity {
-    String[] cities = {"Pune", "Mumbai","Nagpur","Kolkata"};
+    String[] cities = {"Pune", "Mumbai","Nagpur","Kolkata","Bengaluru","Delhi"};
     @BindView(R.id.etConfPassword)
     MaterialEditText etConfPassword;
     @BindView(R.id.toolbarTitle)
