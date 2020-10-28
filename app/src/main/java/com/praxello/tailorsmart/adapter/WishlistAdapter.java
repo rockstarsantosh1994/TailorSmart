@@ -60,7 +60,7 @@ public class WishlistAdapter extends RecyclerView.Adapter<WishlistAdapter.Recycl
             holder.tvPrice.setText(selectedCurrency + " " + Utils.format2Dec(Double.parseDouble(obj.getCalculatedPrice())));
             holder.tvPrice.setVisibility(View.VISIBLE);
         }
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/product/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/product/"
                 + obj.getProductId() + ".jpg").into(holder.ivProduct);
         holder.rvFabrics.setLayoutManager(new LinearLayoutManager(mContext, RecyclerView.HORIZONTAL, false));
         if (obj.getFabricList() != null && obj.getFabricList().size() > 0) {

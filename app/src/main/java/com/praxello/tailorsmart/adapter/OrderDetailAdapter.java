@@ -58,7 +58,7 @@ public class OrderDetailAdapter extends RecyclerView.Adapter<OrderDetailAdapter.
             holder.tvPrice.setText(selectedCurrency + " " + Utils.format2Dec(Double.parseDouble(productOrderItem.getOrderItemPrice())));
             holder.tvPrice.setVisibility(View.VISIBLE);
         }
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/product/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/product/"
                 + productOrderItem.getProductId() + ".jpg").into(holder.ivProduct);
         if (orderItem.getFabrics() != null || orderItem.getMeasurements() != null || orderItem.getStyles() != null) {
             holder.tvViewFabrics.setVisibility(View.VISIBLE);

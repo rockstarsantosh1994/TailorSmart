@@ -60,7 +60,7 @@ public class AppointmentFabricAdapter extends RecyclerView.Adapter<AppointmentFa
         }
         holder.cbSelect.setVisibility(View.GONE);
         holder.ivDelete.setVisibility(View.VISIBLE);
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/fabric/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/fabric/"
                 + obj.getSkuNo() + ".jpg").into(holder.ivFabric);
         holder.ivDelete.setVisibility(View.GONE);
     }

@@ -92,12 +92,12 @@ public class ProductDetailsActivity extends BaseActivity {
             tvSubTitle.setText(product.getProductSubTitle());
             setPriceUponSelectedCurrency();
             tvDesc.setText(product.getProductDetails());
-            GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/product/"
+            GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/product/"
                     + productId + ".jpg").thumbnail(0.1f).into(ivProduct);
             ivProduct.setOnClickListener(view -> {
                 mContext.startActivity(new Intent(mContext, FullScreenImageActivity.class)
                         .putExtra("title", product.getProductTitle())
-                        .putExtra("urlPhotoClick", "http://103.127.146.5/~tailor/Tailorsmart/mobileimages/product/"
+                        .putExtra("urlPhotoClick", "http://103.127.146.25/~tailor/Tailorsmart/mobileimages/product/"
                                 + productId + ".jpg"));
             });
         }

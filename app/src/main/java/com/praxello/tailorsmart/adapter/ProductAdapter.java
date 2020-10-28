@@ -63,7 +63,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.Recycler
             holder.tvPrice.setText(selectedCurrency + " " + price);
             holder.tvPrice.setVisibility(View.VISIBLE);
         }
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/product/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/product/"
                 + obj.getProductId() + ".jpg").thumbnail(0.1f).into(holder.ivProduct);
 //        holder.tvDetails.setText(obj.getStyleTitle() + "   ||   " + obj.getSubStyleTitle() + "   ||   " + obj.getCategoryTitle() + "  || " + obj
 //                .getSequenceNo() + " || " + obj.getIsPriceVariable());

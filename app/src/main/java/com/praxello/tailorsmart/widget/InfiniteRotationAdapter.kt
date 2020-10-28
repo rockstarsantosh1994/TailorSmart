@@ -25,7 +25,7 @@ class InfiniteRotationAdapter(private val mContext: Context, itemList: List<Offe
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         (holder as? ItemViewHolder)?.let {
             val obj = list[position]
-            Glide.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/category/"
+            Glide.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/category/"
                     + obj.id + ".jpg").thumbnail(0.1f).into(holder.ivOffer!!)
             holder.itemView.setOnClickListener { view ->
                 mContext.startActivity(Intent(mContext, ProductListActivity::class.java)

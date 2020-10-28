@@ -43,7 +43,7 @@ public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.RecyclerView
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
         Offer obj = list.get(position);
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/category/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/category/"
                 + obj.getId() + ".jpg").thumbnail(0.1f).into(holder.ivOffer);
         holder.itemView.setOnClickListener(view -> {
             mContext.startActivity(new Intent(mContext, ProductListActivity.class)

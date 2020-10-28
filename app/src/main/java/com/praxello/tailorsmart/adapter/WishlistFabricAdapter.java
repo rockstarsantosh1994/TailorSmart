@@ -63,12 +63,12 @@ public class WishlistFabricAdapter extends RecyclerView.Adapter<WishlistFabricAd
         }
         holder.cbSelect.setVisibility(View.GONE);
         holder.ivDelete.setVisibility(View.VISIBLE);
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/fabric/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/fabric/"
                 + obj.getSkuNo() + ".jpg").into(holder.ivFabric);
         holder.ivFabric.setOnClickListener(view -> {
             mContext.startActivity(new Intent(mContext, FullScreenImageActivity.class)
                     .putExtra("title", obj.getFabricTitle())
-                    .putExtra("urlPhotoClick", "http://103.127.146.5/~tailor/Tailorsmart/mobileimages/fabric/"
+                    .putExtra("urlPhotoClick", "http://103.127.146.25/~tailors/Tailorsmart/mobileimages/fabric/"
                             + obj.getSkuNo() + ".jpg"));
         });
         if (((WishListFabricListActivity) mContext).isShowDeleteBtn) {

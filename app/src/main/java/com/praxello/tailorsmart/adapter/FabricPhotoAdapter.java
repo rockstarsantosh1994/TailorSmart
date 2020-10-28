@@ -37,7 +37,7 @@ public class FabricPhotoAdapter extends RecyclerView.Adapter<FabricPhotoAdapter.
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
         Fabric obj = list.get(position);
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/fabric/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/fabric/"
                 + obj.getSkuNo() + ".jpg").into(holder.ivFabric);
         holder.itemView.setOnClickListener(view -> {
             onClickListener.onClick(view);

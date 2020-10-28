@@ -60,7 +60,7 @@ public class OfferPagerAdapter extends PagerAdapter {
         ImageView ivOffer = itemView.findViewById(R.id.ivOffer);
         TextView tvOffer = itemView.findViewById(R.id.tvOffer);
         Offer offer = offers.get(position);
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/category/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/category/"
                 + offer.getId() + ".jpg").thumbnail(0.1f).into(ivOffer);
         itemView.setOnClickListener(view -> {
             mContext.startActivity(new Intent(mContext, ProductListActivity.class)

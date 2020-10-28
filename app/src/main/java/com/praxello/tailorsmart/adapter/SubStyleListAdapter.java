@@ -65,7 +65,7 @@ public class SubStyleListAdapter extends RecyclerView.Adapter<SubStyleListAdapte
 //            price = price + Utils.fromHtml("<sup><small>*</small></sup>");
 //        holder.tvPrice.setText("\u20B9 " + price);
         holder.tvPrice.setVisibility(View.GONE);
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/parent/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/parent/"
                 + obj.getParentId() + ".jpg").thumbnail(0.1f).into(holder.ivProduct);
 //        holder.tvDetails.setText(obj.getStyleTitle() + "   ||   " + obj.getSubStyleTitle() + "   ||   " + obj.getCategoryTitle() + "  || " + obj
 //                .getSequenceNo() + " || " + obj.getIsPriceVariable());

@@ -41,7 +41,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Recycl
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
         Category obj = list.get(position);
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/style/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/style/"
                 + obj.getId() + ".jpg").thumbnail(0.1f).into(holder.ivCategory);
         holder.itemView.setOnClickListener(view -> {
 //            if (obj.getId().equals("1")) {

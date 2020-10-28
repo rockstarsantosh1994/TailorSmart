@@ -52,7 +52,7 @@ public class FabricOrderAdapter extends RecyclerView.Adapter<FabricOrderAdapter.
         holder.tvPrice.setText(selectedCurrency + " " + Utils.format2Dec(Double.parseDouble(obj.getFabricPrice())));
         holder.tvPrice.setVisibility(View.VISIBLE);
         holder.cbSelect.setVisibility(View.GONE);
-        GlideApp.with(mContext).load("http://103.127.146.5/~tailor/Tailorsmart/mobileimages/fabric/"
+        GlideApp.with(mContext).load("http://103.127.146.25/~tailors/Tailorsmart/mobileimages/fabric/"
                 + obj.getSkuNo() + ".jpg").into(holder.ivFabric);
     }
 
